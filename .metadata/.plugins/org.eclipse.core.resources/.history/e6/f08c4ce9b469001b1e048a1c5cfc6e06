@@ -1,0 +1,11 @@
+
+public class ex01 {
+	public static void main(String[] a) {
+		a = "abc def ghi"
+		System.out.println(a);
+		for(int i = 0; i<a.length ;i++)
+		{
+			System.out.println("a = "+a);
+		}
+	}
+}

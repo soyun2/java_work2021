@@ -1,0 +1,18 @@
+
+public class Bank {
+	public static void main(String[] args) {
+		Account yoon;
+		Account park;
+		yoon = new Account();
+		park = new Account();
+		
+		yoon.printAl();
+		yoon.setBal(40);
+		yoon.printAl();
+		
+		System.out.println("park's");
+		park.printAl();
+		park.setBal(50);
+		park.printAl();
+	}
+}
