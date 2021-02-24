@@ -1,0 +1,8 @@
+
+public class UnSafeCircle {
+	public static void main(String[] args) {
+		Circle c = new Circle(1.5);
+		double area = c.getArea();
+		System.out.println("c ³ÐÀÌ´Â "+area);
+	}
+}

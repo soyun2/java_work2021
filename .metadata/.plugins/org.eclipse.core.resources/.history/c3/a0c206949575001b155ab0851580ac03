@@ -1,0 +1,10 @@
+
+public class Ex01_Out {
+	int a = 10;
+	int b = 20;
+	
+	public void doA(){
+		System.out.println("a = "+a);
+		System.out.println("b = "+b);
+	}
+}

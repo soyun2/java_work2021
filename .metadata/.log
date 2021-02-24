@@ -798,3 +798,61 @@ org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.a
 	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseService.replaceContent(ProblemsDatabaseService.java:175)
 	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:71)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-02-23 14:03:43.407
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:190)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT in models (http://download.eclipse.org/recommenders/models/mars/)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:39)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 8 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-02-23 14:03:43.413
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2021-02-23 15:21:06.707
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\dns_sd.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_281\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:172)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:128)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
