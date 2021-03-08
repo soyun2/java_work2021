@@ -1,6 +1,12 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.Console;
+import java.io.File;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.OutputStreamWriter;
 import java.util.Scanner;
 
 public class Main {
@@ -17,8 +23,17 @@ public class Main {
 		return stu;
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 		Student[] student = new Student[50];
+	
+		File a = new File("a");
+		if(a.exists()){
+			FileInputStream fis = new FileInputStream(new File("a.bat"));
+			ObjectInputStream ois = new ObjectInputStream(fis);
+			student= (Student[]) ois.readObject();
+		}
+		
+//		BufferedReader br = new BufferedReader(new InputStreamReader(fis));
 		
 		Scanner scan = new Scanner(System.in);
 		while(true){
@@ -65,6 +80,10 @@ public class Main {
 				System.out.println("삭제되었습니다.");
 			}
 			else{
+				FileOutputStream fos = new FileOutputStream(new File("a.bat"));
+//				OutputStreamWriter ow = new OutputStreamWriter(fos);
+				ObjectOutputStream oos = new ObjectOutputStream(fos);
+				oos.writeObject(student);
 				System.out.println("종료됩니다.");
 				break;
 			}
