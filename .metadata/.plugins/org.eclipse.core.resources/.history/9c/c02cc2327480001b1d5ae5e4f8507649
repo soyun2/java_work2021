@@ -1,0 +1,14 @@
+class Person{
+	String name = "¿Ã∏ß";
+	int age = 20;
+}
+public class Ex02 {
+	public static void main(String[] args) {
+		String a = "String ";
+		String b = new String("String b");
+		
+		Person c = new Person();
+//		Person d = Person(name = "aa", age = 20);
+		System.out.println(a);
+	}
+}
