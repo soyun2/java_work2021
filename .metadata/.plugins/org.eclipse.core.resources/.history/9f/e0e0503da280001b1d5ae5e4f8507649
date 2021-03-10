@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Snail {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner();
+		System.out.println("ют╥б : ");
+		int n = scan.nextInt(System.in);
+		System.out.println("n = "+n);
+	}
+}
