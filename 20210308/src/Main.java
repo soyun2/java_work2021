@@ -13,11 +13,11 @@ public class Main {
 	public static Student inputStudent(){
 		Scanner scan = new Scanner(System.in);
 //		scan.nextLine();
-		System.out.println("ÀÌ¸§Àº? ");
+		System.out.println("ï¿½Ì¸ï¿½ï¿½ï¿½? ");
 		String name = scan.nextLine();
-		System.out.println("¼ºº°Àº ? ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ? ");
 		String gender = scan.nextLine();
-		System.out.println("³ªÀÌ? ");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½? ");
 		int age = scan.nextInt();
 		Student stu = new Student(name,gender,age);
 		return stu;
@@ -37,7 +37,7 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		while(true){
-			System.out.println("¹¹ÇÒ·¡¿ä? 1,2,3,4 ¼±ÅÃ");
+			System.out.println("ï¿½ï¿½ï¿½Ò·ï¿½ï¿½ï¿½? 1,2,3,4 ï¿½ï¿½ï¿½ï¿½");
 			int select = scan.nextInt();
 			System.out.println("select = "+select);
 			if(select==1)
@@ -54,12 +54,12 @@ public class Main {
 			}
 			else if(select == 2)
 			{
-				System.out.println("===ÇÐ»ýÁ¶È¸===");
+				System.out.println("===ï¿½Ð»ï¿½ï¿½ï¿½È¸===");
 				for(int i=0; i<student.length;i++)
 				{
 //					System.out.println(i+" = "+student[i]);
 					if(student[i] != null){
-						System.out.println(i+"¹øÂ° ÇÐ»ý");
+						System.out.println(i+"ï¿½ï¿½Â° ï¿½Ð»ï¿½");
 						student[i].print();
 					}
 				}
@@ -67,24 +67,24 @@ public class Main {
 			}
 			else if(select==3)
 			{
-				System.out.println("¼öÁ¤ÇÏ°í ½ÍÀº ÇÐ»ý ¹øÈ£ ÀÔ·Â : ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 				int num = scan.nextInt();
 				Student stu = inputStudent();
 				student[num]=stu;
-				System.out.println("¼öÁ¤µÇ¾ú½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			}
 			else if(select == 4){
-				System.out.println("»èÁ¦ÇÏ°í ½ÍÀº ÇÐ»ý ¹øÈ£ ÀÔ·Â : ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð»ï¿½ ï¿½ï¿½È£ ï¿½Ô·ï¿½ : ");
 				int num = scan.nextInt();
 				student[num] = null;
-				System.out.println("»èÁ¦µÇ¾ú½À´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 			}
 			else{
 				FileOutputStream fos = new FileOutputStream(new File("a.bat"));
 //				OutputStreamWriter ow = new OutputStreamWriter(fos);
 				ObjectOutputStream oos = new ObjectOutputStream(fos);
 				oos.writeObject(student);
-				System.out.println("Á¾·áµË´Ï´Ù.");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½Ë´Ï´ï¿½.");
 				break;
 			}
 		}
