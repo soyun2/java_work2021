@@ -1,0 +1,24 @@
+class Box{
+	private String conts;
+	Box(String cont){
+		this.conts = cont;
+	}
+	public String toString(){
+		return conts;
+	}
+}
+public class Ex03 {
+	Ex03(){
+		Box[] arr = new Box[3];
+		for(int i=0;i<3;i++)
+		{
+			System.out.println("arr["+i+"] = "+arr[i]);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Ex03 ex = new Ex03();
+		ex[1] = "»ç°ú";
+	}
+
+}

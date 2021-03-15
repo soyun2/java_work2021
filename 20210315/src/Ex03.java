@@ -1,0 +1,34 @@
+class Box{
+	private String conts;
+	Box(String cont){
+		this.conts = cont;
+	}
+	public String toString(){
+		return conts;
+	}
+}
+public class Ex03 {
+	Ex03(){
+		Box a = new Box("사과");
+		System.out.println(a);
+		System.out.println(a.toString());
+		
+		Box bana = new Box("바나나");
+		System.out.println(bana);
+		
+		Box box[] = new Box[5];
+		System.out.println("박스 몇개? "+box.length);
+		System.out.println("box[0] = "+box[0]);
+		System.out.println("box[1] = "+box[1]);
+		
+		box[0] = a;
+		box[1] = bana;
+		System.out.println("box[0] = "+box[0]);
+		System.out.println("box[1] = "+box[1]);
+	}
+	
+	public static void main(String[] args) {
+		new Ex03();
+	}
+
+}

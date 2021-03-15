@@ -1,0 +1,20 @@
+class Box{
+	private String conts;
+	Box(String cont){
+		this.conts = cont;
+	}
+	public String toString(){
+		return conts;
+	}
+}
+public class Ex03 {
+	Ex03(){
+		Box a = new Box("»ç°ú");
+		System.out.println(a);
+	}
+	
+	public static void main(String[] args) {
+		new Ex03();
+	}
+
+}
