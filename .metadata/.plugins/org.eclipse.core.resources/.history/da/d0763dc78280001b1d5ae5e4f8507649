@@ -1,8 +1,0 @@
-//990925-1012999 : -를 공백으로
-public class Ex06 {
-	public static void main(String[] args) {
-		String a = "990925-1012999";
-		System.out.println(a.replace("-"," "));
-	}
-
-}
