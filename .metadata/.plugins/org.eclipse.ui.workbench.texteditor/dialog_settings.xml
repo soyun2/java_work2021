@@ -6,14 +6,23 @@
 		<item key="incremental" value="false"/>
 		<item key="wrap" value="true"/>
 		<item key="wholeword" value="false"/>
-		<item key="selection" value="mouse"/>
+		<item key="selection" value="findByAll"/>
 		<list key="findhistory">
+			<item value="findbyall"/>
+			<item value="Member"/>
+			<item value="loginframe"/>
+			<item value="삭제"/>
+			<item value="DB연결 완료"/>
+			<item value="memberName"/>
+			<item value="DefaultTableModel"/>
+			<item value="for"/>
+			<item value="아이디"/>
+			<item value="instance"/>
+			<item value="getinstance"/>
 			<item value="mouse"/>
 			<item value="MemberProc"/>
 			<item value="main"/>
 			<item value="exit"/>
-			<item value="stop"/>
-			<item value="getTime"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -22,7 +31,7 @@
 		<item key="DIALOG_WIDTH" value="261"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 		<item key="DIALOG_HEIGHT" value="381"/>
-		<item key="DIALOG_X_ORIGIN" value="838"/>
-		<item key="DIALOG_Y_ORIGIN" value="274"/>
+		<item key="DIALOG_X_ORIGIN" value="1281"/>
+		<item key="DIALOG_Y_ORIGIN" value="295"/>
 	</section>
 </section>
