@@ -6,8 +6,11 @@
 		<item key="incremental" value="false"/>
 		<item key="wrap" value="true"/>
 		<item key="wholeword" value="false"/>
-		<item key="selection" value="exit"/>
+		<item key="selection" value="mouse"/>
 		<list key="findhistory">
+			<item value="mouse"/>
+			<item value="MemberProc"/>
+			<item value="main"/>
 			<item value="exit"/>
 			<item value="stop"/>
 			<item value="getTime"/>

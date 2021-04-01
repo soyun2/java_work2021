@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class Example {
+public class TimeFunction{
 	static int myTime = 0;
 	static String timerBuffer; // 잔여 시간 문자열이 저장될 버퍼
 	static int oldTime; // 타이머가 ON 되었을 때의 시각을 기억하고 있는 변수
