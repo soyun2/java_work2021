@@ -6,23 +6,23 @@
 		<item key="incremental" value="false"/>
 		<item key="wrap" value="true"/>
 		<item key="wholeword" value="false"/>
-		<item key="selection" value="findByAll"/>
+		<item key="selection" value="second"/>
 		<list key="findhistory">
-			<item value="findbyall"/>
-			<item value="Member"/>
-			<item value="loginframe"/>
-			<item value="삭제"/>
-			<item value="DB연결 완료"/>
-			<item value="memberName"/>
-			<item value="DefaultTableModel"/>
-			<item value="for"/>
-			<item value="아이디"/>
-			<item value="instance"/>
-			<item value="getinstance"/>
-			<item value="mouse"/>
-			<item value="MemberProc"/>
-			<item value="main"/>
+			<item value="second"/>
+			<item value="dispose"/>
+			<item value="Time"/>
+			<item value="result"/>
+			<item value="contentPane"/>
+			<item value="btnSelSeat"/>
+			<item value="if"/>
+			<item value="System"/>
+			<item value="Toggle"/>
 			<item value="exit"/>
+			<item value="ex"/>
+			<item value="close"/>
+			<item value="확인"/>
+			<item value="종료"/>
+			<item value="Button"/>
 		</list>
 		<list key="replacehistory">
 		</list>
