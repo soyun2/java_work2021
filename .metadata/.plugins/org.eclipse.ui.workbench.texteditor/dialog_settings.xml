@@ -6,8 +6,9 @@
 		<item key="incremental" value="false"/>
 		<item key="wrap" value="true"/>
 		<item key="wholeword" value="false"/>
-		<item key="selection" value="second"/>
+		<item key="selection" value="btnAddTime"/>
 		<list key="findhistory">
+			<item value="btnAddTime"/>
 			<item value="second"/>
 			<item value="dispose"/>
 			<item value="Time"/>
@@ -22,7 +23,6 @@
 			<item value="close"/>
 			<item value="확인"/>
 			<item value="종료"/>
-			<item value="Button"/>
 		</list>
 		<list key="replacehistory">
 		</list>

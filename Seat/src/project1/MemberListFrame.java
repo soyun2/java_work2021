@@ -143,6 +143,7 @@ public class MemberListFrame extends JFrame {
 
 				}
 				
+				
 			}
 
 		});
